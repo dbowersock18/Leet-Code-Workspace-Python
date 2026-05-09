@@ -42,3 +42,24 @@ for i in range(len(min(strs, key=len))):
 
 output = "".join(commonPrefix)
 # print(output)
+
+
+"""
+    Solution online: 
+    
+    TLDR: Start with the max prefix it could be, and slowly whittle it down using .find() and slicing -1
+    
+    class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        if len(strs) == 0:
+            return ""
+        prefix = strs[0]
+        for i in range(1, len(strs)):
+            while strs[i].find(prefix) != 0:
+                prefix = prefix[0 : len(prefix) - 1]
+                if prefix == "":
+                    return ""
+        return prefix
+
+"""
+
