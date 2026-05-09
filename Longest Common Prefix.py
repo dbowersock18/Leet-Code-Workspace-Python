@@ -45,7 +45,7 @@ output = "".join(commonPrefix)
 
 
 """
-    Solution online: 
+    Solution online: hue hue
     
     TLDR: Start with the max prefix it could be, and slowly whittle it down using .find() and slicing -1
     
